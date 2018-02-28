@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kun.jun.androiddesignsuportlibrary">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SnackFloatActivity"
+            android:label="@string/title_activity_snack_float"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KorbanActivity"
+            android:label="Korban"
+            android:parentActivityName=".SnackFloatActivity" />
+        <activity
+            android:name=".TeInLa.TeInLaActivity"
+            android:label="Text Input Layout"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TeInLa.TabActivity"
+            android:label="Tab Layout"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".TeInLa.KorbanTabActivity" />
+        <activity android:name=".TeInLa.KorbanTab1Activity" />
+        <activity android:name=".TeInLa.KorbanTab2Activity" />
+        <activity android:name=".AppbarDkk.ToolActivity" />
+        <activity android:name=".AppbarDkk.MaiActivity"></activity>
+    </application>
+
+</manifest>
